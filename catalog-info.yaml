@@ -20,6 +20,7 @@ metadata:
     argocd/app-selector: backstage-name=my-camel-app
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=my-camel-app'
     roadie-backstage-pull-requests/default-filter: ''
+    github.com/project-slug: 'my-camel-app'
 spec:
   type: service
   lifecycle: experimental
