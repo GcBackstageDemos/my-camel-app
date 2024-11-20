@@ -20,6 +20,7 @@ metadata:
     argocd/app-selector: backstage-name=my-camel-app
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=my-camel-app'
     github.com/project-slug: 'GcBackstageDemos/my-camel-app'
+    azure-container-registry/repository-name: 'samples/hello-world'
 spec:
   type: service
   lifecycle: experimental
