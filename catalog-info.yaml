@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-camel-app"
+  description: "A my-camel-app"
+  tags:
+    - java
+  links:
+    - url: https://devspaces.apps.cluster-zdrxv.zdrxv.sandbox191.opentlc.com/?storageType=per-workspace#https://github.com/GcBackstageDemos/my-camel-app
+      title: OpenShift Dev Spaces
+      icon: web
+    - url: https://hawtio-online.apps.cluster-zdrxv.zdrxv.sandbox191.opentlc.com/
+      title: HawtIO
+      icon: web
+  annotations:
+    backstage.io/kubernetes-id: "my-camel-app"
+    janus-idp.io/tekton : "my-camel-app"    
+    backstage.io/source-location: 'url:https://github.com/GcBackstageDemos/my-camel-app'
+    backstage.io/techdocs-ref: 'url:https://github.com/GcBackstageDemos/my-camel-app'
+    argocd/app-selector: backstage-name=my-camel-app
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=my-camel-app'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: 'user:admin'
