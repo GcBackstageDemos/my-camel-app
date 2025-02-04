@@ -21,6 +21,7 @@ metadata:
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=my-camel-app'
     github.com/project-slug: 'GcBackstageDemos/my-camel-app'
     azure-container-registry/repository-name: 'samples/hello-world'
+    jira/project-key: "SCRUM"
 spec:
   type: service
   lifecycle: experimental
